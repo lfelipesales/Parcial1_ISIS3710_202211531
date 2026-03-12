@@ -1,15 +1,20 @@
-export default async function Layout({
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export default function Layout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
+  params: { lang: "en" | "es" };
 }) {
-  const { lang } = await params;
-
   return (
-    <html lang={lang}>
-      <body>{children}</body>
+    <html lang={params.lang}>
+      <body>
+        <Header lang={params.lang} />
+        <main className="bg-[#e0e0e0]">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
