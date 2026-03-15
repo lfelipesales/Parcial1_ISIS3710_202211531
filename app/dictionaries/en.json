@@ -1,4 +1,12 @@
 {
-  "welcome": "Welcome",
-  "profile": "Profile"
+  "title": "Harry Potter Characters",
+  "description": "Explore the magical universe of Harry Potter: a complete list of characters with their house, species, and main facts",
+  "house": "House",
+  "gender": "Gender",
+  "wand": "Wand",
+  "wood": "Wood",
+  "core": "Core",
+  "length": "Length",
+  "notFound": "Character not found",
+  "unknown": "Desconocido"
 }
